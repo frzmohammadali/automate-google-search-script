@@ -2,12 +2,11 @@
 This is a script witten in python and selenium to automate search keywords on google and click on desired site to increase google search console CTR
 
 ## Usage help
-First clone the repository then run below command:
-`$ python automate_search_google.py --help`
+First clone the repository then run the command: `$ python automate_search_google.py --help`
 
-## usage sample
+## Usage sample
 `$ python automate_search_google.py "['keyword 1','keyword 2']" mysite.com 500 -v`
-### command description:
+#### command description:
   - `"['keyword 1','keyword 2']"` is *list of keywords to search*
   - `mysite.com` is *Url of your desired website to be clicked*
   - `500` is *maximum successful click count you want*
