@@ -7,6 +7,11 @@ First clone the repository then run below command:
 
 ## usage sample
 `$ python automate_search_google.py "['keyword 1','keyword 2']" mysite.com 500 -v`
+### command description:
+  - `"['keyword 1','keyword 2']"` is *list of keywords to search*
+  - `mysite.com` is *Url of your desired website to be clicked*
+  - `500` is *maximum successful click count you want*
+  - `-v` is *browser visibility flag. if present the browser become visible*
 
 ## logs
 All the execution logs can be found in file 'log.txt' after each run of the script.
