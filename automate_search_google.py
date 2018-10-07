@@ -13,6 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from threading import Thread
 from queue import Queue
 import argparse
+import urllib.parse
 
 chrome_driver_executable_path = ''
 if getattr(sys, 'frozen', False):
@@ -76,7 +77,8 @@ def main_script(keyword, site_url, max_successful_clicks, browser_visibility_fla
             driver.implicitly_wait(10)
             driver.set_page_load_timeout(80)
 
-            driver.get('http://google.com')
+            # driver.get('http://google.com/search?q=' + urllib.parse.urlencode(keyword)) # does not work
+            driver.get('http://google.com/')
             wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#lst-ib')))
             driver.execute_script("window.stop();")
             driver.execute_script("window.stop();")
@@ -92,13 +94,13 @@ def main_script(keyword, site_url, max_successful_clicks, browser_visibility_fla
             except:
                 pass
             if not recaptcha:
-                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'body div.g')))
+                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#res a')))
                 driver.execute_script("window.stop();")
-                site_links = driver.find_elements_by_css_selector('body div.g h3 a')
+                site_links = driver.find_elements_by_css_selector('#res a')
                 site_links_filtered = filter(lambda x: site_url in x.get_attribute('href'), site_links)
                 site_link = next(site_links_filtered)
                 site_link.click()
-                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'a.brand')))
+                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'head')))
                 successful_attempt += 1
                 final_sleep = 5
             else:
