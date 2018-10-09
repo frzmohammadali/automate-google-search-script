@@ -94,14 +94,14 @@ def main_script(keyword, site_url, max_successful_clicks, browser_visibility_fla
             except:
                 pass
             if not recaptcha:
-                # wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#res a')))
-                # driver.execute_script("window.stop();")
+                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#res a')))
+                driver.execute_script("window.stop();")
                 site_links = driver.find_elements_by_css_selector('#res a')
                 site_links_filtered = filter(lambda x: site_url in x.get_attribute('href'), site_links)
                 site_link = next(site_links_filtered)
                 site_link.click()
-                # wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'head')))
-                sleep(5)
+                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'head')))
+                sleep(10)
                 successful_attempt += 1
                 final_sleep = 5
             else:
