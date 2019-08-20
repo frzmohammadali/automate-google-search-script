@@ -79,12 +79,12 @@ def main_script(keyword, site_url, max_successful_clicks, browser_visibility_fla
 
             # driver.get('http://google.com/search?q=' + urllib.parse.urlencode(keyword)) # does not work
             driver.get('http://google.com/')
-            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#lst-ib')))
+            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'input[name="q"]')))
             driver.execute_script("window.stop();")
             driver.execute_script("window.stop();")
 
             attempt += 1
-            elm = driver.find_element_by_css_selector('#lst-ib')
+            elm = driver.find_element_by_css_selector('input[name="q"]')
             elm.send_keys(keyword)
             elm.send_keys(Keys.RETURN)
             sleep(3)
@@ -94,14 +94,16 @@ def main_script(keyword, site_url, max_successful_clicks, browser_visibility_fla
             except:
                 pass
             if not recaptcha:
-                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#res a')))
+                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#res')))
                 driver.execute_script("window.stop();")
                 site_links = driver.find_elements_by_css_selector('#res a')
                 site_links_filtered = filter(lambda x: site_url in x.get_attribute('href'), site_links)
                 site_link = next(site_links_filtered)
                 site_link.click()
-                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'head')))
+                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'body')))
                 sleep(10)
+                elm = driver.find_element_by_css_selector('body')
+                elm.send_keys(Keys.RETURN)
                 successful_attempt += 1
                 final_sleep = 5
             else:

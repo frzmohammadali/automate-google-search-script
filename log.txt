@@ -208,3 +208,31 @@
 2018/10/09 14:38:49	|	process pid: 13736 	|	    2 attempt	|	    1 successful click	|	    0 timeout	|	     1 recaptcha 	|	    0 error
 2018/10/09 14:39:20	|	process pid: 13736 	|	    3 attempt	|	    2 successful click	|	    0 timeout	|	     1 recaptcha 	|	    0 error
 2018/10/09 14:39:51	|	process pid: 13736 	|	    4 attempt	|	    3 successful click	|	    0 timeout	|	     1 recaptcha 	|	    0 error
+2019/08/20 19:01:05	|	process pid: 5800  	|	    1 attempt	|	    1 successful click	|	    0 timeout	|	     0 recaptcha 	|	    0 error
+2019/08/20 19:01:19	|	process pid: 5800  	|	    2 attempt	|	    1 successful click	|	    0 timeout	|	     1 recaptcha 	|	    0 error
+2019/08/20 19:01:48	|	process pid: 5800  	|	    3 attempt	|	    2 successful click	|	    0 timeout	|	     1 recaptcha 	|	    0 error
+2019/08/20 19:02:23	|	process pid: 5800  	|	    4 attempt	|	    3 successful click	|	    0 timeout	|	     1 recaptcha 	|	    0 error
+2019/08/20 19:02:58	|	process pid: 5800  	|	    5 attempt	|	    4 successful click	|	    0 timeout	|	     1 recaptcha 	|	    0 error
+2019/08/20 19:03:13	|	process pid: 5800  	|	    6 attempt	|	    4 successful click	|	    0 timeout	|	     2 recaptcha 	|	    0 error
+2019/08/20 19:12:29	|	process pid: 15952 	|	    1 attempt	|	    0 successful click	|	    0 timeout	|	     1 recaptcha 	|	    0 error
+2019/08/20 19:12:54	|	process pid: 15952 	|	    3 attempt	|	    0 successful click	|	    0 timeout	|	     2 recaptcha 	|	    1 error
+2019/08/20 19:14:29	|	process pid: 16208 	|	    1 attempt	|	    0 successful click	|	    0 timeout	|	     1 recaptcha 	|	    0 error
+2019/08/20 19:15:15	|	process pid: 16208 	|	    4 attempt	|	    0 successful click	|	    0 timeout	|	     2 recaptcha 	|	    2 error
+2019/08/20 19:15:25	|	process pid: 16208 	|	    5 attempt	|	    0 successful click	|	    0 timeout	|	     3 recaptcha 	|	    2 error
+2019/08/20 19:18:02	|	process pid: 3712  	|	    1 attempt	|	    0 successful click	|	    0 timeout	|	     1 recaptcha 	|	    0 error
+2019/08/20 19:18:52	|	process pid: 21160 	|	    2 attempt	|	    0 successful click	|	    0 timeout	|	     1 recaptcha 	|	    1 error
+2019/08/20 19:19:40	|	process pid: 21160 	|	    5 attempt	|	    0 successful click	|	    0 timeout	|	     2 recaptcha 	|	    3 error
+2019/08/20 19:31:31	|	process pid: 21516 	|	    1 attempt	|	    0 successful click	|	    0 timeout	|	     1 recaptcha 	|	    0 error
+2019/08/20 19:33:32	|	process pid: 21932 	|	    1 attempt	|	    1 successful click	|	    0 timeout	|	     0 recaptcha 	|	    0 error
+process pid: 21932 | finished 1 successful clicks! 
+process stopped...
+2019/08/20 19:34:40	|	process pid: 17940 	|	    2 attempt	|	    0 successful click	|	    0 timeout	|	     1 recaptcha 	|	    1 error
+2019/08/20 19:34:46	|	process pid: 17940 	|	    3 attempt	|	    0 successful click	|	    0 timeout	|	     2 recaptcha 	|	    1 error
+2019/08/20 19:44:47	|	process pid: 20484 	|	    1 attempt	|	    0 successful click	|	    0 timeout	|	     1 recaptcha 	|	    0 error
+2019/08/20 19:45:14	|	process pid: 20484 	|	    3 attempt	|	    0 successful click	|	    0 timeout	|	     2 recaptcha 	|	    1 error
+2019/08/20 19:45:21	|	process pid: 20484 	|	    4 attempt	|	    0 successful click	|	    0 timeout	|	     3 recaptcha 	|	    1 error
+2019/08/20 19:45:29	|	process pid: 20484 	|	    5 attempt	|	    0 successful click	|	    0 timeout	|	     4 recaptcha 	|	    1 error
+2019/08/20 19:45:57	|	process pid: 20484 	|	    6 attempt	|	    1 successful click	|	    0 timeout	|	     4 recaptcha 	|	    1 error
+process pid: 20484 | finished 1 successful clicks! 
+process stopped...
+2019/08/20 20:12:48	|	process pid: 16524 	|	    1 attempt	|	    1 successful click	|	    0 timeout	|	     0 recaptcha 	|	    0 error
