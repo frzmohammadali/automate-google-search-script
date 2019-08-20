@@ -3,3 +3,8 @@ venv/*
 .idea/*
 build/*
 command.txt
+automate_search_google.spec
+dist/
+kinematix_special_search_script.py
+kinematix_special_search_script.spec
+log.txt

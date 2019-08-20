@@ -13,7 +13,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from threading import Thread
 from queue import Queue
 import argparse
-import urllib.parse
 
 chrome_driver_executable_path = ''
 if getattr(sys, 'frozen', False):
