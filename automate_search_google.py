@@ -104,7 +104,7 @@ def main_script(keyword, site_url, max_successful_clicks, browser_visibility_fla
                 elm = driver.find_element_by_css_selector('body')
                 elm.send_keys(Keys.RETURN)
                 successful_attempt += 1
-                final_sleep = 5
+                final_sleep = 240 # staying in the website
             else:
                 driver.execute_script("window.stop();")
                 recaptcha_ex += 1
